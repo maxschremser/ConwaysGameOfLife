@@ -1,0 +1,19 @@
+// Conway's Game Of Life
+plugins {
+    id "com.github.samueltbrown.cucumber" version "0.9"
+}
+
+repositories {
+  mavenCentral()
+}
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'com.github.samueltbrown.cucumber'
+
+dependencies {
+    testCompile "org.codehaus.groovy:groovy-all:2.4.7"
+    testCompile "junit:junit:4.12"
+    testCompile "info.cukes:cucumber-groovy:1.2.5"
+    cucumberRuntime "info.cukes:cucumber-groovy:1.2.5"
+}
